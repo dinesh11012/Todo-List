@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  <title>Todo List</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main>
+
+  <h1>Todo List</h1>
+
+  <p class="sub">
+    Add a task, check it off when it's done.
+  </p>
+
+  <div class="add">
+
+    <input
+      id="in"
+      type="text"
+      placeholder="What needs doing?"
+      aria-label="New task"
+      maxlength="200"
+    >
+
+    <button class="primary" id="addBtn">
+      Add task
+    </button>
+
+  </div>
+
+  <div class="tabs" role="group" aria-label="Filter tasks">
+
+    <button class="tab" data-f="all" aria-pressed="true">
+      All
+    </button>
+
+    <button class="tab" data-f="active" aria-pressed="false">
+      To do
+    </button>
+
+    <button class="tab" data-f="done" aria-pressed="false">
+      Done
+    </button>
+
+  </div>
+
+  <ul id="list"></ul>
+
+  <div class="foot">
+
+    <span id="count"></span>
+
+    <button class="link" id="clear">
+      Clear completed
+    </button>
+
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
